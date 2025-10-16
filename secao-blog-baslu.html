@@ -1,0 +1,340 @@
+<style>
+  /* Import Work Sans font */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+  /* Scoped styles for Elementor compatibility - Blog Section */
+  .baslu-blog-section {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .baslu-blog-section * {
+    box-sizing: border-box;
+  }
+
+  .baslu-blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Horizontal Banner - Blog CTA */
+  .baslu-blog-banner {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .baslu-blog-banner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .baslu-blog-content {
+    flex: 1;
+  }
+
+  .baslu-blog-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  .baslu-blog-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+  }
+
+  .baslu-blog-subtitle {
+    font-size: 18px;
+    color: #4b5563;
+    margin: 0 0 30px 0;
+    line-height: 1.6;
+  }
+
+  .baslu-blog-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  }
+
+  .baslu-blog-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(16, 185, 129, 0.4);
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  }
+
+  .baslu-blog-image {
+    flex-shrink: 0;
+    width: 280px;
+    height: 280px;
+  }
+
+  .baslu-blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+  }
+
+  /* Latest Post Section */
+  .baslu-latest-post {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s ease;
+  }
+
+  .baslu-latest-post:hover {
+    border-color: #10b981;
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.15);
+  }
+
+  .baslu-post-image {
+    flex-shrink: 0;
+    width: 45%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .baslu-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .baslu-post-content {
+    flex: 1;
+    padding: 50px;
+  }
+
+  .baslu-post-category {
+    display: inline-block;
+    background: #10b981;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  .baslu-post-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+  }
+
+  .baslu-post-excerpt {
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0 0 25px 0;
+    line-height: 1.7;
+  }
+
+  .baslu-post-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #9ca3af;
+  }
+
+  .baslu-post-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .baslu-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #000000;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .baslu-read-more:hover {
+    background: #10b981;
+    transform: translateX(5px);
+  }
+
+  .baslu-read-more::after {
+    content: '→';
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .baslu-read-more:hover::after {
+    transform: translateX(5px);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .baslu-blog-banner {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 30px;
+      gap: 30px;
+    }
+
+    .baslu-blog-image {
+      width: 220px;
+      height: 220px;
+    }
+
+    .baslu-blog-title {
+      font-size: 32px;
+    }
+
+    .baslu-latest-post {
+      flex-direction: column;
+    }
+
+    .baslu-post-image {
+      width: 100%;
+      height: 300px;
+    }
+
+    .baslu-post-content {
+      padding: 30px;
+    }
+
+    .baslu-post-title {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .baslu-blog-section {
+      padding: 40px 15px;
+    }
+
+    .baslu-blog-banner {
+      padding: 30px 20px;
+    }
+
+    .baslu-blog-title {
+      font-size: 26px;
+    }
+
+    .baslu-blog-subtitle {
+      font-size: 16px;
+    }
+
+    .baslu-blog-image {
+      width: 180px;
+      height: 180px;
+    }
+
+    .baslu-post-content {
+      padding: 25px 20px;
+    }
+
+    .baslu-post-title {
+      font-size: 22px;
+    }
+
+    .baslu-post-excerpt {
+      font-size: 15px;
+    }
+  }
+</style>
+
+<div class="baslu-blog-section">
+  <div class="baslu-blog-container">
+    
+    <!-- Horizontal Banner - Blog CTA -->
+    <div class="baslu-blog-banner">
+      <div class="baslu-blog-content">
+        <div class="baslu-blog-badge">✨ Novidades</div>
+        <h2 class="baslu-blog-title">Visite nosso Blog, Dicas e Aventuras</h2>
+        <p class="baslu-blog-subtitle">
+          Descubra histórias inspiradoras, guias completos e dicas essenciais para suas viagens de moto. 
+          Conteúdo exclusivo para motociclistas aventureiros.
+        </p>
+        <a href="https://baslu.com.br/blog/" class="baslu-blog-cta" target="_blank" rel="noopener">
+          Explorar Blog
+        </a>
+      </div>
+      <div class="baslu-blog-image">
+        <img 
+          src="https://baslu.com.br/wp-content/uploads/2025/10/categoria-baslu-1.png" 
+          alt="Baú Mochila Baslu"
+        />
+      </div>
+    </div>
+
+    <!-- Latest Blog Post Section -->
+    <div class="baslu-latest-post">
+      <div class="baslu-post-image">
+        <img 
+          src="/placeholder.svg?height=400&width=600" 
+          alt="Último post do blog"
+        />
+      </div>
+      <div class="baslu-post-content">
+        <div class="baslu-post-category">Aventuras</div>
+        <h3 class="baslu-post-title">
+          Como Escolher o Equipamento Perfeito para Sua Próxima Viagem
+        </h3>
+        <div class="baslu-post-meta">
+          <span>📅 15 de Janeiro, 2025</span>
+          <span>⏱️ 5 min de leitura</span>
+        </div>
+        <p class="baslu-post-excerpt">
+          Planeje sua próxima aventura com segurança e estilo. Descubra os equipamentos essenciais 
+          que todo motociclista precisa ter, dicas de organização e como maximizar o espaço sem 
+          comprometer o conforto do garupa.
+        </p>
+        <a href="https://baslu.com.br/blog/" class="baslu-read-more" target="_blank" rel="noopener">
+          Ler Artigo Completo
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
