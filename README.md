@@ -1,10 +1,10 @@
-# # 🏍️ Baslu WordPress Elementor Front-End
+# 🏍️ Baslu WordPress Elementor Front-End
 
 ## 🇧🇷 Descrição (Português)
 
-Este repositório contém os arquivos HTML e CSS customizados desenvolvidos para o site oficial da **[Baslu.com.br](https://baslu.com.br)** — uma marca brasileira especializada em **alforges, bauletos e acessórios premium para motociclistas**.
+Este repositório contém os arquivos **HTML, CSS e JavaScript proprietários** desenvolvidos exclusivamente para o site oficial da **[Baslu.com.br](https://baslu.com.br)** — marca brasileira especializada em **alforges, bauletos e acessórios premium para motociclistas**.
 
-Os componentes foram criados e otimizados para uso no **WordPress com Elementor Pro**, garantindo design responsivo, performance e integração com o e-commerce da marca.
+Os componentes foram criados e otimizados para uso **interno** no **WordPress com Elementor Pro**, garantindo design responsivo, performance e integração com o e-commerce da marca.
 
 ### 🧩 Componentes incluídos
 - `barra_promocional_baslu.html` — Barra superior rolante com promoções e descontos.
@@ -20,37 +20,34 @@ Os componentes foram criados e otimizados para uso no **WordPress com Elementor 
 - **Animações CSS e scripts JS nativos**
 
 ### 💡 Recursos e destaques
-- Layout 100% responsivo (desktop, tablet e mobile).
-- Compatível com o construtor de temas Elementor.
-- Código limpo, organizado e pronto para reutilização.
-- Animações leves e fluídas para carrosséis e botões.
-- Padrão visual consistente com a identidade da marca Baslu.
+- Layout 100% responsivo (desktop, tablet e mobile)
+- Integração perfeita com Elementor
+- Código limpo, padronizado e otimizado
+- Design exclusivo da marca **Baslu**
 
-### 🚀 Como usar
-1. Abra o Elementor no WordPress.
-2. Crie uma nova seção (HTML personalizado).
-3. Cole o conteúdo de um dos arquivos `.html` desejados.
-4. Ajuste as margens/paddings conforme o layout do seu tema.
-5. Publique e visualize em **tela cheia (100vw)**.
+### 🚫 Direitos e restrições
+Este projeto é **de uso exclusivo da marca Baslu**.  
+**É proibida a cópia, redistribuição, modificação ou uso comercial** sem autorização expressa do desenvolvedor responsável.  
+O código aqui presente é protegido por direitos autorais e não está liberado para edição pública ou colaboração externa.
 
-### 📜 Licença
-Este projeto é de código aberto sob a licença MIT.  
-Sinta-se à vontade para usar, editar e contribuir.
+### 📜 Direitos autorais
+© 2025 **Baslu.com.br** — Todos os direitos reservados.  
+Desenvolvido por **Matheus Libonatti**.
 
 ---
 
 ## 🇺🇸 Description (English)
 
-This repository contains the custom **HTML, CSS and JavaScript** files designed for **[Baslu.com.br](https://baslu.com.br)** — a Brazilian brand specialized in **premium motorcycle saddlebags and accessories**.
+This repository contains the **proprietary HTML, CSS, and JavaScript code** developed exclusively for **[Baslu.com.br](https://baslu.com.br)** — a Brazilian brand specialized in **premium motorcycle saddlebags and accessories**.
 
-All components are optimized for **WordPress + Elementor Pro**, ensuring responsiveness, performance, and easy visual integration with Baslu’s e-commerce platform.
+All components were built and optimized for **internal use** within **WordPress + Elementor Pro**, ensuring responsiveness, performance, and seamless brand integration.
 
 ### 🧩 Included Components
 - `barra_promocional_baslu.html` — Scrolling top banner with promotions.
 - `carrossel_baslu_produtos.html` — Full-width hero carousel (desktop & mobile).
 - `beneficios_baslu.html` — Benefits section with custom SVG icons.
 - `categorias_baslu.html` — Category grid (Saddlebags, Top Cases, Kits, Accessories).
-- `baslu-wordpress.html` — Full landing page template with header and footer.
+- `baslu-wordpress.html` — Full page template with header, product grid and footer.
 
 ### ⚙️ Technologies Used
 - **HTML5 / CSS3 / JavaScript**
@@ -58,26 +55,21 @@ All components are optimized for **WordPress + Elementor Pro**, ensuring respons
 - **WordPress + Elementor Pro**
 - **CSS animations and native JS**
 
-### 💡 Key Features
-- Fully responsive layout for all devices.
-- Clean and maintainable codebase.
-- Smooth CSS animations and transitions.
-- Ready to embed inside Elementor HTML widgets.
-- Visual style aligned with Baslu’s brand identity.
+### 💡 Highlights
+- Fully responsive layout across all devices
+- Clean, optimized, and modular code
+- Exclusive visual identity of **Baslu**
+- Built specifically for Elementor sections
 
-### 🚀 How to Use
-1. Open Elementor inside your WordPress dashboard.
-2. Add a new **HTML widget** to your section.
-3. Paste the code from the desired `.html` file.
-4. Adjust spacing and section width to **100vw**.
-5. Save and preview your live design.
+### 🚫 Rights and Restrictions
+This project is **the exclusive property of Baslu**.  
+**Copying, modifying, redistributing, or reusing this code without explicit authorization is strictly prohibited.**  
+All content is protected under copyright law and not open for public editing or contributions.
 
-### 📜 License
-Open-source under the **MIT License**.  
-Feel free to use, modify, and contribute.
+### 📜 Copyright
+© 2025 **Baslu.com.br** — All rights reserved.  
+Developed by **Matheus Libonatti**.
 
 ---
 
-Desenvolvido por **Matheus Libonatti** — *Baslu.com.br*  
-🖤 Inspirado em liberdade, estrada e design.
-
+🖤 *Criado com foco em liberdade, estrada e design.*
