@@ -1,0 +1,316 @@
+<!-- Seção de Anúncio de Produto com Vídeo - Responsivo e Seguro para Elementor -->
+<style>
+  /* Scoped styles para não afetar outros elementos do Elementor */
+  .baslu-video-ad-section {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+    padding: clamp(40px, 8vw, 80px) 20px;
+    box-sizing: border-box;
+  }
+
+  .baslu-video-ad-section * {
+    box-sizing: border-box;
+  }
+
+  .baslu-video-ad-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(30px, 5vw, 60px);
+    align-items: center;
+  }
+
+  /* Video Section */
+  .baslu-video-wrapper {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .baslu-video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+
+  /* Content Section */
+  .baslu-content-wrapper {
+    width: 100%;
+  }
+
+  .baslu-oferta-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    font-size: clamp(11px, 1.5vw, 13px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .baslu-headline {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 900;
+    color: #000000;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.5px;
+  }
+
+  .baslu-subheadline {
+    font-size: clamp(15px, 2vw, 18px);
+    color: #333333;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+  }
+
+  /* Benefits List */
+  .baslu-benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+
+  .baslu-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: clamp(14px, 1.8vw, 16px);
+    color: #000000;
+    line-height: 1.5;
+  }
+
+  .baslu-benefit-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .baslu-benefit-icon svg {
+    width: 14px;
+    height: 14px;
+    stroke: white;
+    stroke-width: 3;
+    fill: none;
+  }
+
+  /* Price Section */
+  .baslu-price-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .baslu-old-price {
+    font-size: clamp(16px, 2vw, 20px);
+    color: #999999;
+    text-decoration: line-through;
+    margin-bottom: 8px;
+  }
+
+  .baslu-current-price {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 900;
+    color: #10b981;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* CTA Button */
+  .baslu-cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    margin-bottom: 25px;
+  }
+
+  .baslu-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  }
+
+  /* Trust Badges */
+  .baslu-trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .baslu-trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: clamp(12px, 1.5vw, 14px);
+    color: #666666;
+  }
+
+  .baslu-trust-badge svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .baslu-video-ad-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .baslu-video-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .baslu-content-wrapper {
+      text-align: center;
+    }
+
+    .baslu-benefit-item {
+      text-align: left;
+    }
+
+    .baslu-trust-badges {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .baslu-video-ad-section {
+      padding: 40px 16px;
+    }
+
+    .baslu-cta-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
+
+<div class="baslu-video-ad-section">
+  <div class="baslu-video-ad-container">
+    <!-- Video Section -->
+    <div class="baslu-video-wrapper">
+      <video autoplay loop muted playsinline>
+        <source src="https://baslu.com.br/wp-content/uploads/2025/10/Video-Baslu7.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+    </div>
+
+    <!-- Content Section -->
+    <div class="baslu-content-wrapper">
+      <span class="baslu-oferta-badge">OFERTA LIMITADA</span>
+      
+      <h2 class="baslu-headline">Transforme Suas Viagens com o Alforge Baslu</h2>
+      
+      <p class="baslu-subheadline">
+        Máxima capacidade, design moderno e resistência incomparável para suas aventuras de moto.
+      </p>
+
+      <!-- Benefits List -->
+      <ul class="baslu-benefits-list">
+        <li class="baslu-benefit-item">
+          <span class="baslu-benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span>Material resistente à água e impactos</span>
+        </li>
+        <li class="baslu-benefit-item">
+          <span class="baslu-benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span>Instalação rápida e universal - serve para todas as motos</span>
+        </li>
+        <li class="baslu-benefit-item">
+          <span class="baslu-benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span>Grande capacidade de armazenamento</span>
+        </li>
+        <li class="baslu-benefit-item">
+          <span class="baslu-benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span>Design aerodinâmico e moderno</span>
+        </li>
+        <li class="baslu-benefit-item">
+          <span class="baslu-benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span><strong>NÃO atrapalha o garupa</strong> - conforto garantido</span>
+        </li>
+      </ul>
+
+      <!-- Price -->
+      <div class="baslu-price-wrapper">
+        <div class="baslu-old-price">De R$ 349,00</div>
+        <div class="baslu-current-price">R$ 249,00</div>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#" class="baslu-cta-button">COMPRAR AGORA</a>
+
+      <!-- Trust Badges -->
+      <div class="baslu-trust-badges">
+        <div class="baslu-trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Compra Segura</span>
+        </div>
+        <div class="baslu-trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+          <span>Pague com PIX</span>
+        </div>
+        <div class="baslu-trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+          <span>Frete Grátis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
