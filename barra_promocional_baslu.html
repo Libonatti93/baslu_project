@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra Promocional</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Added viewport width and negative margins to break out of any container */
+    .promo-bar {
+      background-color: #000000;
+      color: #ffffff;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      overflow: hidden;
+      padding: 8px 0;
+    }
+
+    .promo-content {
+      display: flex;
+      animation: scroll 20s linear infinite;
+      white-space: nowrap;
+    }
+
+    .promo-content:hover {
+      animation-play-state: paused;
+    }
+
+    .promo-item {
+      padding: 0 40px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .promo-separator {
+      color: #ffffff;
+      padding: 0 10px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="promo-bar">
+    <div class="promo-content">
+      <span class="promo-item">FRETE GRATIS PARA TODO BRASIL</span>
+      <span class="promo-separator">•</span>
+      <span class="promo-item">15% OFF NA SUA PRIMEIRA COMPRA</span>
+      <span class="promo-separator">•</span>
+      <span class="promo-item">5% OFF NO PIX</span>
+      <span class="promo-separator">•</span>
+      <span class="promo-item">ATÉ 10X SEM JUROS</span>
+      <span class="promo-separator">•</span>
+      <span class="promo-item">FRETE GRATIS PARA TODO BRASIL</span>
+      <span class="promo-separator">•</span>
+      <span class="promo-item">15% OFF NA SUA PRIMEIRA COMPRA</span>
+      <span class="promo-separator">•</span>
+      <span class="promo-item">5% OFF NO PIX</span>
+      <span class="promo-separator">•</span>
+      <span class="promo-item">ATÉ 10X SEM JUROS</span>
+      <span class="promo-separator">•</span>
+    </div>
+  </div>
+</body>
+</html>
